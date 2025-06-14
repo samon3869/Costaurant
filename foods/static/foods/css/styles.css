@@ -1,0 +1,15 @@
+/* ① 전체 페이지 기본 레이아웃 정하기 */
+
+@font-face {
+  src: url("../fonts/BMJUA_ttf.ttf");
+  font-family : Jua;
+}
+
+body {
+  background-color: #f0e8d9;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: Jua
+}
