@@ -1,5 +1,10 @@
 
 
+🎥 [Django 작동방식 및 MVT 컨셉](https://www.youtube.com/watch?v=xFkzKxQz9gE)
+
+
+</br>
+
 # 🛠️ 1. Django 프로젝트 기본 구조 설명
 
 `django-admin startproject myproject` 실행 시 생성되는 디렉토리 구조:
@@ -82,16 +87,26 @@ python manage.py migrate
 `python manage.py startapp myapp` 실행 시 생성되는 디렉토리 구조:
 
 ```
-myapp/
-├── __init__.py
-├── admin.py
-├── apps.py
-├── migrations/
-│   └── __init__.py
-├── models.py
-├── tests.py
-└── views.py
+myproject/
+├── manage.py
+├── myproject/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+└── myapp/
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── migrations/
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
 ```
+
+> 📌 `myapp/`은 루트 디렉토리(`manage.py`와 같은 레벨)에 생성되며, 하나의 기능 단위를 구성하는 독립적인 앱입니다.
 
 ---
 
@@ -144,8 +159,3 @@ INSTALLED_APPS = [
     'myapp',
 ]
 ```
-
-
-
-
-🎥 [Django 작동방식 및 MVT 컨셉](https://www.youtube.com/watch?v=xFkzKxQz9gE)

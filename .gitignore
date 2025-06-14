@@ -1,0 +1,54 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# mypy
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Pytest
+.pytest_cache/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# System files
+Thumbs.db
+ehthumbs.db
