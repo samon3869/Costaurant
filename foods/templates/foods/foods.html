@@ -1,6 +1,19 @@
 {% load static %}
-
-<h2>{{name}}</h2>
-<div>{{description}}</div>
-<p>{{price}}원</p>
-<img src="{% get_static_prefix %}{{img_url}}" >
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Costaurant</title>
+	<link rel="stylesheet" href="{% static 'foods/css/styles_detail.css' %}">
+</head>
+<body>
+	<div class="food-detail">
+			<h2>{{menu.name}}</h2>
+			<div>{{menu.description}}</div>
+			<p>{{menu.price}}원</p>
+			<img src="{% get_static_prefix %}{{menu.img_url}}" >
+			<a href="/foods/menu/">메뉴 목록으로 돌아가기</a>
+	</div>
+</body>
+</html>
