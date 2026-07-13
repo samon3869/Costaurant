@@ -46,6 +46,8 @@ wsl --install
 
 ### 2️⃣ pyenv 설치
 
+<img width="2967" height="1800" alt="image" src="https://github.com/user-attachments/assets/6f4c6325-5903-41c3-96ea-947a33ae6134" />
+
 ```bash
 # 필수 패키지 설치
 sudo apt update && sudo apt install -y make build-essential libssl-dev \
