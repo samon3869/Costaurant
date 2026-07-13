@@ -51,6 +51,9 @@ wsl --install
 sudo apt update && sudo apt install -y make build-essential libssl-dev \
 zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
+# pyenv 본체 설치
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 ```
 
 | 패키지                     | 설명                                                              |
@@ -71,6 +74,7 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 | **libxmlsec1-dev**   | 보안 기능 포함 XML 파싱 라이브러리 (디지털 서명 등)               |
 | **libffi-dev**       | C 라이브러리 호출 인터페이스 제공 (`ctypes`, `cffi`와 연동)   |
 | **liblzma-dev**      | `.xz`, `.lzma` 등 고압축 포맷 처리용 라이브러리               |
+
 
 ### 3️⃣ pyenv-virtualenv 설치
 
